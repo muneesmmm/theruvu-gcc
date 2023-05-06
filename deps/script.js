@@ -36,7 +36,8 @@
         card.querySelector("[user-url]").href = "https://github.com/" + user.gh_username;
         card.querySelector("[user-place]").textContent = user.place;
         card.querySelector("[user-position]").textContent = user.current_pos;
-        // card.querySelector("[user-bio]").textContent = user.bio;
+        card.querySelector("[user-bio]").textContent = user.bio;
+        card.querySelector("[user-phone]").textContent = user.phone;
         userCardContainer.append(card);
         return {
           name: user.name,

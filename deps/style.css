@@ -186,8 +186,6 @@ p {
     filter: drop-shadow(rgba(250, 0, 0, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
     background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(122, 0, 37) 0%, rgb(173, 0, 116) 30%, rgb(128, 0, 79) 85%) repeat scroll 0% 0% / 200% 100%;
     color: rgb(23, 15, 30);
-    position: relative;
-    top: 70px;
 }
 
 .email:hover {
@@ -311,9 +309,4 @@ button i {
     position: relative;
     left: 60px;
 
-}
-#address{
-    color:white;
-    position: absolute;
-    left:10px;
 }
