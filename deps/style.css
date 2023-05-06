@@ -25,19 +25,23 @@ body {
 .road-to-oss {
     color: white;
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10ch;
+    font-size: 6ch;
     padding-top: 0;
 }
 
 .heading {
     text-align: center;
 }
+.wa-link{
+    color: #e5e2e4;
+    text-decoration: none;
+}
 
 .contri {
     color: #524175;
     font-size: 30px;
     font-weight: 700;
-    width: 350px;
+    width: 300px;
     padding: 8px;
     border: 0;
     margin: 8px;
@@ -81,7 +85,7 @@ input {
 
 .card {
     width: 300px;
-    height: 600px;
+    height: 550px;
     margin: 15px;
     box-sizing: border-box;
     text-align: center;
@@ -126,7 +130,7 @@ input {
 h1 {
     text-align: center;
     margin: auto;
-    color: #5ee8fd;
+    color: #ffffff;
 }
 
 
@@ -135,12 +139,12 @@ h2 {
 }
 
 .current_pos {
-    color: #5ee8fd;
+    color: #ffffff;
 }
 
 h3 {
     text-align: center;
-    padding: 0 8px;
+    padding: 0px;
     margin: auto;
     color: #e5e2e4;
 }
@@ -153,7 +157,7 @@ h4 {
 }
 
 p {
-    padding: 18px;
+    padding: 1px;
     color: white;
 }
 
@@ -215,7 +219,7 @@ p {
 }
 
 .banner a {
-    color: #5ee8fd;
+    color: #1ed7f3;
 }
 
 .footer {
@@ -303,10 +307,18 @@ button i {
     position:absolute;
     left: 5px;
     font-size: small;
+    font-family: 'Nunito', sans-serif;
 }
 #blood{
     color: white;
     position: relative;
     left: 60px;
+    font-family: 'Nunito', sans-serif;
 
+}
+#wp-logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 70px;
 }

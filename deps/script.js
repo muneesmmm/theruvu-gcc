@@ -28,6 +28,14 @@
     .then(res => res.json())
     .then(data => {
       users = data.map(user => {
+        let phoneNumber = user.phone;
+
+// Create a link to open the WhatsApp chat with the phone number
+let link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+
+// Add the WhatsApp logo image to the link
+let logo = '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg" alt="WhatsApp logo" width="50" height="50">';
+let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
         const card = userCardTemplate.content.cloneNode(true).children[0];
         let isImageAvailable = user.image == null || user.image == "null" || user.image == "";
         card.querySelector("[user-image]").src = isImageAvailable ? 'images/johndoe.png' : "images/" + user.image;
@@ -36,8 +44,10 @@
         card.querySelector("[user-url]").href = "https://github.com/" + user.gh_username;
         card.querySelector("[user-place]").textContent = user.place;
         card.querySelector("[user-position]").textContent = user.current_pos;
-        card.querySelector("[user-bio]").textContent = user.bio;
-        card.querySelector("[user-phone]").textContent = user.phone;
+        card.querySelector("[user-bio]").textContent = user.address;
+        card.querySelector("[user-phone]").innerHTML += whatsappLink;
+        card.querySelector("[user-blood]").textContent = user.blood;
+        card.querySelector("[user-id]").textContent = user.id;
         userCardContainer.append(card);
         return {
           name: user.name,

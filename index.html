@@ -18,10 +18,10 @@
 </head>
 
 <body>
-  <div class="scroll-btn-group">
+  <!-- <div class="scroll-btn-group">
     <i title="scroll to top" class="fa-solid fa-chevron-up" id="btn-up"></i>
     <i title="scroll to bottom" class="fa-solid fa-chevron-down" id="btn-down"></i>
-  </div>
+  </div> -->
   <div class="content" id="content">
     <h1 class="road-to-oss">THERUVU GCC</h1>
     <div class="search-wrapper">
@@ -36,8 +36,8 @@
     <template user-template>
       <div id="profile-card" class="card">
         <img class="profile-img" src="img1.jpg" user-image />
-        <span id="ID_NO">ID_NO:</span>
-        <span id="blood">blood group:</span>
+        <span id="ID_NO">ID_NO: <span user-id></span></span>
+        <span id="blood">Blood Group: <span user-blood></span></span>
         <h1 user-name></h1>
         <p user-bio></p>
         <h3 user-place></h3>
@@ -47,7 +47,7 @@
           </i> -->
         </a>
         <h2 class="current_pos" user-position></h2>
-        <img src="whatsapp-logo" alt=""><p user-phone></p>
+        <a><img  id="wp-logo" src="/images/whatsapp-logo.png" alt=""><p  user-phone></p></a>
         <button id="profile-download" class="profile-download">
           Download
         </button>

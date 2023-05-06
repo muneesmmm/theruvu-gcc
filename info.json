@@ -5,7 +5,9 @@
     "place": "Palakkad",
     "current_pos": "Full stack Developer",
     "image": "munees.jpeg",
-    "bio": "Mambatta(H)Thiruvegappura",
-    "phone":"9645732562"
+    "address": "Mambatta(H)Thiruvegappura",
+    "phone":"9645732562",
+    "id":"1234",
+    "blood":"A+"
   }
 ]
