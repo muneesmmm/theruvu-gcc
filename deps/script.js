@@ -48,6 +48,7 @@ let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
         card.querySelector("[user-phone]").innerHTML += whatsappLink;
         card.querySelector("[user-blood]").textContent = user.blood;
         card.querySelector("[user-id]").textContent = user.id;
+        card.querySelector("[user-country]").textContent = user.country;
         userCardContainer.append(card);
         return {
           name: user.name,
