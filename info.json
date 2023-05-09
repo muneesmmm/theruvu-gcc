@@ -1,14 +1,14 @@
 [
   {
     "name": "Muhammed Munees",
-    "gh_username": "muneesmmm",
-    "place": "Palakkad",
-    "country":"India",
-    "current_pos": "Full stack Developer",
-    "image": "munees.jpeg",
-    "address": "Mambatta(H)Thiruvegappura",
-    "phone":"9645732562",
     "id":"1234",
-    "blood":"A+"
+    "blood":"A+",
+    "gh_username": "muneesmmm",
+    "place": "thiruvegappura",
+    "country":"India",
+    "image": "munees.jpeg",
+    "address": "Mambatta",
+    "phone":"9645732562"
+   
   }
 ]

@@ -32,7 +32,6 @@
 
 // Create a link to open the WhatsApp chat with the phone number
 let link = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
-
 // Add the WhatsApp logo image to the link
 let logo = '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg" alt="WhatsApp logo" width="50" height="50">';
 let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
@@ -43,8 +42,7 @@ let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
         // card.querySelector("[user-username]").textContent = user.gh_username;
         card.querySelector("[user-url]").href = "https://github.com/" + user.gh_username;
         card.querySelector("[user-place]").textContent = user.place;
-        card.querySelector("[user-position]").textContent = user.current_pos;
-        card.querySelector("[user-bio]").textContent = user.address;
+        card.querySelector("[user-address]").textContent = user.address;
         card.querySelector("[user-phone]").innerHTML += whatsappLink;
         card.querySelector("[user-blood]").textContent = user.blood;
         card.querySelector("[user-id]").textContent = user.id;
