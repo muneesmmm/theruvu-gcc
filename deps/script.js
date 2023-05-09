@@ -67,12 +67,12 @@ let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
         let pLogo = document.createElement("img");
         pLogo.className = "pLogo"
         pLogo.src = "deps/gcc.jpg"
-        let hfLogo = document.createElement("img");
-        hfLogo.className = "hfLogo"
-        hfLogo.src = "deps/gcc1.jpg"
+        // let hfLogo = document.createElement("img");
+        // hfLogo.className = "hfLogo"
+        // hfLogo.src = "deps/gcc1.jpg"
 
         logos.appendChild(pLogo)
-        logos.appendChild(hfLogo)
+        // logos.appendChild(hfLogo)
 
         let footer = document.createElement("div");
         footer.className = "footer";
