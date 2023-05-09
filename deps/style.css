@@ -91,7 +91,7 @@ input {
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #170f1e;
+    background-color: #000000;
     border: 1px solid #5ee8fd;
     filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
 
@@ -121,6 +121,7 @@ input {
     display: block;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 }
 
 .name {
@@ -142,14 +143,14 @@ h2 {
 }
 
 .current_pos {
-    color: #ffff00;
+    color: #00FFFF;
 }
 
 h3 {
     text-align: center;
     padding: 0px;
     margin: auto;
-    color: #006400;
+    color: #ffffff;
 }
 
 h4 {
