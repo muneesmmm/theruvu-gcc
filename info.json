@@ -1,15 +1,5 @@
 [
-      {
-    "name": "Muhammed Munees",
-    "id":"1234",
-    "blood":"A+",
-    "gh_username": "muneesmmm",
-    "place": "thiruvegappura",
-    "country":"India",
-    "image": "munees.jpeg",
-    "address": "Mambatta",
-    "phone":"9645732562"
-       },
+
          {
             "id": 1,
             "name": "HAKEEM .MB",
