@@ -28,7 +28,7 @@
           {
             "id": 3,
             "name": "MUHAMMED KOYA .AP",
-            "phone": 919546086647,
+            "phone": 9546086647,
             "FATHER NAME": "MOIDEEN AP",
             "address": "Anamooliparambil",
             "country": "KSA ABHA ",
@@ -40,11 +40,11 @@
           {
             "id": 4,
             "name": "RIYAS .MK",
-            "phone": 918111868822,
+            "phone": "8111868822",
             "FATHER NAME": "Adamkutty",
             "address": "Mukkadakkattil",
             "country": "Thiruvegappura",
-            "PHONE NUMBER": 918111868822,
+            "PHONE NUMBER": "8111868822",
             "BIRTH YEAR": "7/9/1985",
             "place": "Thiruvegappura ",
             "image": "gcc-profile.jpg"
@@ -52,7 +52,7 @@
           {
             "id": 5,
             "name": "MUJEEB SANA .M",
-            "phone": 917594800100,
+            "phone": "7594800100",
             "FATHER NAME": "Muhammed ",
             "address": "Mampatta ",
             "country": "India kerala",
