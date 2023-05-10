@@ -8,8 +8,8 @@ html {
 }
 
 body {
-    /* background: linear-gradient(to left top, #850028, #524175);
-    background-attachment: fixed; */
+    background: linear-gradient(to left top, #850028, #524175);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
