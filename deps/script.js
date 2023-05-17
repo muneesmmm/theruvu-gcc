@@ -40,7 +40,7 @@ let whatsappLink = `<a class="wa-link" href="${link}">${phoneNumber}</a>`;
         card.querySelector("[user-image]").src = isImageAvailable ? 'images/johndoe.png' : "images/" + user.image;
         card.querySelector("[user-name]").textContent = user.name;
         // card.querySelector("[user-username]").textContent = user.gh_username;
-        card.querySelector("[user-url]").href = "/edit.html?id=" + user.id;
+        card.querySelector("[user-url]").href = "https://muneesmmm.github.io/theruvu-gcc/edit.html?id=" + user.id;
         card.querySelector("[user-place]").textContent = user.place;
         card.querySelector("[user-address]").textContent = user.address;
         card.querySelector("[user-phone]").innerHTML += whatsappLink;
