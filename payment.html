@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Details</title>
+  <style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /* Dropdown Styles */
+  div {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  select {
+    appearance: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  select:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  }
+
+  /* Hidden Rows */
+  .hidden {
+    display: none;
+  }
+  </style>
+</head>
+
+<body>
+  <h1>Payment Details</h1>
+  <div>
+    <label for="user-select">Select User:</label>
+    <select id="user-select">
+      <option value="">All Users</option>
+    </select>
+  </div>
+  <table id="table-body">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>2021</th>
+        <th>2022</th>
+        <th>2023</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch('pay.json')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.querySelector('#table-body tbody');
+        const userSelect = document.getElementById('user-select');
+
+        data.forEach(user => {
+          const row = document.createElement('tr');
+          const idCell = document.createElement('td');
+          const nameCell = document.createElement('td');
+          const payment2021Cell = document.createElement('td');
+          const payment2022Cell = document.createElement('td');
+          const payment2023Cell = document.createElement('td');
+          const editCell = document.createElement('td');
+          const editLink = document.createElement('a');
+          editLink.textContent = 'Edit';
+          editLink.href = `edit.html?id=${user.id}`;
+
+          idCell.textContent = user.id;
+          nameCell.textContent = user.name;
+          payment2021Cell.textContent = user['2021'];
+          payment2022Cell.textContent = user['2022'];
+          payment2023Cell.textContent = user['2023'];
+
+          row.appendChild(idCell);
+          row.appendChild(nameCell);
+          row.appendChild(payment2021Cell);
+          row.appendChild(payment2022Cell);
+          row.appendChild(payment2023Cell);
+          editCell.appendChild(editLink);
+          row.appendChild(editCell);
+
+          tableBody.appendChild(row);
+
+          // Add user options to the dropdown list
+          const userOption = document.createElement('option');
+          userOption.value = user.id;
+          userOption.textContent = user.name;
+          userSelect.appendChild(userOption);
+        });
+
+        // Handle user selection change event
+        userSelect.addEventListener('change', (event) => {
+          const selectedUserId = event.target.value;
+          const rows = tableBody.querySelectorAll('tr');
+
+          rows.forEach(row => {
+            if (selectedUserId === '' || row.firstChild.textContent === selectedUserId) {
+              row.classList.remove('hidden');
+            } else {
+              row.classList.add('hidden');
+            }
+          });
+        });
+      })
+      .catch(error => console.log(error));
+  </script>
+</body>
+
+</html>
+
+  
+  

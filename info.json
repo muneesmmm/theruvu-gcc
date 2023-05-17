@@ -10,7 +10,9 @@
             "PHONE NUMBER": 971505810827,
             "BIRTH YEAR": 1976,
             "place": "Thiruvegappura ",
-            "image": "gcc-profile.jpg"
+            "image": "gcc-profile.jpg",
+            "2022": 1000,
+            "2023": 0
           },
           {
             "id": 2,
@@ -23,7 +25,9 @@
             "BIRTH YEAR": "31/ 09/73",
             "blood": "A+",
             "place": "Thiruvegappura ",
-            "image": "gcc-profile.jpg"
+            "image": "gcc-profile.jpg",
+            "2022": 1000,
+            "2023": 0
           },
           {
             "id": 3,
