@@ -348,3 +348,6 @@ hr{
     width: 99.5%;
     position: relative;
 }
+a {
+    text-decoration: none;
+  }
